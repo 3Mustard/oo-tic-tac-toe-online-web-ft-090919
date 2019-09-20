@@ -88,6 +88,8 @@ class TicTacToe
     elsif @board[combo[0]] == "O"
       return "O"
     else 
+      nil 
+    end 
   end 
 end 
 
