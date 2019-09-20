@@ -54,20 +54,13 @@ class TicTacToe
   end 
   
   def won?
-    draw = 0 
-    winning_combo = []
     WIN_COMBINATIONS.each do |combo|
       if @board[combo[0]] == "X" && @board[combo[1]] == "X" && @board[combo[2] == "X"] 
-        draw += 1 
-        winning_combo = combo 
-      end 
-      if @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2] == "O"]
-        draw += 1 
-        winning_combo = combo
+        combo 
+      elsif @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2] == "O"]
+        combo
       end
-    end 
-    if draw > 1 
-      return false
+      false 
     end 
   end 
 end 
