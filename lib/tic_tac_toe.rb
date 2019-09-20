@@ -83,11 +83,7 @@ class TicTacToe
   
   def winner
     combo = won? 
-    if combo[0] == "X"
-      "X"
-    elsif combo[0] == "O"
-      "O"
-    end 
+    combo[0] == "X" ? "X" : "O"
   end 
 end 
 
