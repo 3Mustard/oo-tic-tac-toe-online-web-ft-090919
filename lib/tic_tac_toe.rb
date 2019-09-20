@@ -52,6 +52,10 @@ class TicTacToe
     move(input,current_player)
     display_board
   end 
+  
+  def won?
+    
+  end 
 end 
 
 
