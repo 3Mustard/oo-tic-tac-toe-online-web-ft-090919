@@ -80,6 +80,15 @@ class TicTacToe
   def over?
     full? || won? ? true : false 
   end 
+  
+  def winner
+    combo = won? 
+    if combo[0] == "X"
+      "X"
+    elsif combo[0] == "O"
+      "O"
+    end 
+  end 
 end 
 
 
