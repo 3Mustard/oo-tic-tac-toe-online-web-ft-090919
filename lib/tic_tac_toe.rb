@@ -91,7 +91,11 @@ class TicTacToe
     until over? == true do 
       turn 
     end 
-    puts "Congratulations #{winner}!"
+    if draw?
+      puts "Cat's Game!"
+    else 
+      puts "Congratulations #{winner}!"
+    end 
   end 
 end 
 
