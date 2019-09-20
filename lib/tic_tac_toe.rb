@@ -66,7 +66,9 @@ class TicTacToe
         winning_combo = combo
       end
     end 
-    draw? > 1 ? false : winning_combo
+    if draw > 1 
+      false
+    end 
   end 
 end 
 
