@@ -72,5 +72,15 @@ class TicTacToe
       true 
     end 
   end 
+  
+  def draw?
+    full? && !won? ? true : false 
+  end 
 end 
+
+
+
+
+
+
 
