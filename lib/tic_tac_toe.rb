@@ -61,5 +61,8 @@ class TicTacToe
     end 
   end
   
+  def full?
+    @board.each_with_index do ||
+  end 
 end 
 
