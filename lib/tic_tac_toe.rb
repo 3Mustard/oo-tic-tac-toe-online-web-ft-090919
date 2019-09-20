@@ -62,8 +62,15 @@ class TicTacToe
   end
   
   def full?
-    @board.each_with_index do |value,index|
-      
+    counter = 0 
+    @board.each do |value|
+      if value != " "
+        counter += 1 
+      end 
+    end 
+    if counter == 9 
+      true 
+    end 
   end 
 end 
 
