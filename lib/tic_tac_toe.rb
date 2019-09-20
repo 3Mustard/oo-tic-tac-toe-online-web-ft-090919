@@ -82,14 +82,7 @@ class TicTacToe
   end 
   
   def winner
-    combo = won? 
-    winner = nil 
-    if @board[combo[0]] == "X"
-      winner = "X"
-    elsif @board[combo[0]] == "O"
-      winner ="O"
-    end
-    winner 
+    
   end 
 end 
 
