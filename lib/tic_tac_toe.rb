@@ -67,7 +67,7 @@ class TicTacToe
       end
     end 
     if draw > 1 
-      false
+      return false
     end 
   end 
 end 
